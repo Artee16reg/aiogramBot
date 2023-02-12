@@ -16,5 +16,8 @@ def load_config(path: str | None = None) -> Config:
     env = Env()  # Создаем экземпляр класса Env
     env.read_env(path)  # Методом read_env() читаем файл .env и загружаем из него переменные в окружение
     return Config(tg_bot=TgBot(token=env('TOKEN')))
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> eee79a4 (change .gitignore and add config.py)
