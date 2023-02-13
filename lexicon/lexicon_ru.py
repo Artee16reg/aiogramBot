@@ -16,3 +16,7 @@ LEXICON_RU: dict[str, str] = {
     'user_won': 'Ты победил! Поздравляю!\n\nДавай сыграем еще?',
     'nobody_won': 'Ничья!\n\nПродолжим?',
     'bot_choice': 'Мой выбор'}
+LEXICON_COMMANDS_RU: dict[str, str] = {
+    '/start': 'запустить бота',
+    '/help': 'help',
+    }
