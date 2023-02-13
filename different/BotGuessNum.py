@@ -3,10 +3,11 @@ import random
 from aiogram import Bot, Dispatcher
 from aiogram.types import Message
 from aiogram.filters import Text, Command, CommandStart
-from config import TOKEN
+from config_data.config import Config, load_config
 
 
-bot: Bot = Bot(TOKEN)
+config: Config = load_config()
+bot: Bot = Bot(config.tg_bot.token)
 dp: Dispatcher = Dispatcher()
 
 

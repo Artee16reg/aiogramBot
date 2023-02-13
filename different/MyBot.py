@@ -4,7 +4,7 @@ from aiogram.types import Message
 from aiogram.types import ContentType
 from aiogram import F
 from FiltersBot import NumbersInMessage
-from config import TOKEN
+from config_data.config import load_config
 
 # Создаем диспетчера
 dp: Dispatcher = Dispatcher()
@@ -111,7 +111,7 @@ dp.message.register(send_echo)
 
 
 def main() -> None:
-    bot: Bot = Bot(token=TOKEN)
+    bot: Bot = Bot(token=load_config().tg_bot.token)
     dp.run_polling(bot)
 
 
